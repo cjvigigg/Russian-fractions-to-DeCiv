@@ -31,7 +31,6 @@
 		"culture": 12,
 		"science": 12,
 		"maintenance": 96,
-		"requiredBuildingInAllCities": "Colosseum",
 		"requiredTech": "Currency"
 		
 ]
