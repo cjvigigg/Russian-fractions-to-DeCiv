@@ -32,7 +32,7 @@
 			"[-1 Happiness] [in all cities]",
 			"Starts with [Writing]",
 			"Starts with [Supremacy] adopted",
-			
+		],		
 		"cities": [
 			"Yaru",
 			"Iremel",
@@ -57,7 +57,5 @@
 			"Orbam",
 			"Kire",
 			"Iaksarga"
-		]		
-			},
-	
-]
+		]
+	}
