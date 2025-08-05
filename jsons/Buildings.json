@@ -1,36 +1,187 @@
 [
 	{
-		"name": "Holodeck",
-		"replaces": "Circus Maximus",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
+		"name": "Passionaries' Palace",
+		"isWonder": true,
+		"uniqueTo": "Eurasia",
+		"gold": 2,
+		"culture": 2,
+		"happiness": 1,
+		"cost": 0,
+		"uniques": [
+			"Provides [1] [Power]",
+			"Provides [1] [Weapons]",
+			"[2] free [Son of Eurasia] units appear",
+			"Can only be built <in [Capital] cities>",
+			"Gain a free [Food Store] [in this city]",
+			"Automatically built in all cities where it is buildable"
+		],
+		"quote": "Now I turn to the most worthy of the worthy. Carry the will of Eurasia with pen and sword and work for our common good.",
+		"civilopediaText": [
+			{
+				"text": "Now I turn to the most worthy of the worthy. Carry the will of Eurasia with pen and sword and work for our common good."
+			}
+		]
+	},
+	{
+		"name":"Chitalna",
+		"replaces": "Library",
+		"uniqueTo": "Eurasia",
+		"cost": 75,
+		"culture": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"[+1 Science] per [3] population [in this city]",
+			"[+1 Science] [in this city] <when above [0] [Power]>",
+			"[+2 Science] from [Books] tiles [in this city]",
+		],
+	},
+	{
+		"name": "Retrain survivors",
+		"replaces": "Search for Survivors",
+		"uniqueTo": "Eurasia",
+		"cost": 40,
 		"isNationalWonder": true,
-		"requiredBuildingInAllCities": "Colosseum",
-		"requiredTech": "Horseback Riding"
+		"uniques": [
+			"[+2] population [in this city]",
+			"Provides [1] [Slaves]",
+			"Gain a free [Chitalna] [in this city]"],
 	},
 	{
-		"name": "Breeders",
-		"replaces": "Aqueduct",
-		"uniqueTo": "Aliens",
-		"cost": 80,
-		"hurryCostModifier": 160,
-		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
-		"requiredTech": "Engineering"
+		"name": "Subpassional quarter",
+		"replaces": "Prison Camp",
+		"uniqueTo": "Eurasia",
+		"cost": 50,
+		"hurryCostModifier": 25,
+		"production": -1,
+		"happiness": -1,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"Provides [1] [Slaves]",
+			"[+5]% Production when constructing [Civilian] units [in this city]",
+			"Destroyed when the city is captured",
+		],
+		"requiredTech": "Construction"
 	},
 	{
-		"name": "Beer",
-		"replaces": "Market",
-		"uniqueTo": "Aliens",
-		"cost": 480,
-		"happiness": 12,
-		"culture": 12,
-		"science": 12,
-		"maintenance": 96,
-		"requiredTech": "Currency"
-	}	
+		"name": "Institute of Eurasia",
+		"replaces": "University",
+		"uniqueTo": "Eurasia",
+		"cost": 100,
+		"culture": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 15,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Scientist": 1},
+		"uniques": [
+			"[+1 Science] from [Jungle] tiles [in this city]",
+			"[+1 Science] from [Forest] tiles [in this city]",
+			"[+1 Science] from [Sunken Ruins] tiles [in this city]",
+			"Only available <in cities with a [Library]>",
+			"[+1 Science, +1 Culture] [in this city] <when above [0] [Power]>"
+		],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Uchilishe",
+		"replaces": "Public School",
+		"uniqueTo": "Eurasia",
+		"cost": 140,
+		"science": 1,
+		"culture": 1,
+		"maintenance": 1,
+		"hurryCostModifier": 0,
+		"uniques": ["[+1 Science] per [2] population [in this city] <after discovering [Networking]>",
+			"[+1 Science] [in this city] <when above [0] [Power]>",
+			"Only available <in cities with a [Library]>"
+		],
+	},
+	{
+		"name": "Eurasian Duma",
+		"replaces": "Congress",
+		"uniqueTo": "Eurasia",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"percentStatBonus": { "culture": 40 },
+		"uniques": [
+			"[+1 Culture, +1 Gold] per [4] population [in all cities]",
+			"[+1 Culture] from every [Uchilishe]",
+			"[+1 Culture] from every [Institute of Eurasia]",
+			"[+1 Culture] from every [Chitalna]",
+			"[-10]% Unhappiness from [Specialists] [in all cities]",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Council]>",
+			"Destroyed when the city is captured"
+		],
+	},
+	{
+		"name": "Sovet Passionaries",
+		"replaces": "Council",
+		"uniqueTo": "Eurasia",
+		"cost": 100,
+		"requiredTech": "Civil Service",
+		"uniques": [
+			"[+10]% growth [in all cities]",
+			"[+10]% Production when constructing [All] buildings [in all cities]",
+			"[+15]% Strength <for [Land] units> <when fighting in [Enemy Land] tiles>",
+			"[+10]% Production when constructing [Military] units [in all cities]",
+			"Earn [10]% of the damage done to [Military] units as [Culture]",
+			"Only available <if [Search for Survivors] is constructed>",
+			"Can only be built <in [Capital] cities>",
+			"Only available <in cities without a [Congress]>",
+			"Destroyed when the city is captured"
+		],
+	},
+	{
+		"name": "Propaganda Center",
+		"replaces": "Broadcast Tower",
+		"uniqueTo": "Eurasia",
+		"cost": 200,
+		"requiredTech": "Radio"
+		"happiness": 3,
+		"uniques": ["Consumes [1] [Power]"],
+	},
+	{
+		"name": "Social Laboratories",
+		"replaces": "Research Lab",
+		"uniqueTo": "Eurasia",
+		"culture": 2,
+		"percentStatBonus": { "science": 45 },
+		"specialistSlots": { "Administrator": 1 },
+		"specialistSlots": { "Scientist": 1 },
+		"greatPersonPoints": { "Great Administrator": 1 },
+		"maintenance": 1,
+		"uniques": [
+			"Only available <in cities with a [University]>",
+			"Consumes [1] [Power]"
+		],
+		"requiredTech": "Laboratory"
+	},
+	{
+		"name": "Monitoring Center",
+		"replaces": "Listening Post",
+		"uniqueTo": "Eurasia",
+		"maintenance": 1,
+		"happiness": 1,
+		"culture": 1,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Remove extra unhappiness from annexed cities",
+			"[-25]% enemy spy effectiveness [in this city]",
+			"Destroyed when the city is captured",
+			"Only available <when espionage is enabled>"
+		],
+		"requiredTech": "Radio"
+	},
+	{
+		"name": "Center of Passionarity",
+		"replaces": "Media Center",
+		"uniqueTo": "Eurasia",
+		"happiness": 3,
+		"culture": 6,
+		"requiredNearbyImprovedResources": ["Books", "Data"],
+		"greatPersonPoints": { "Great Administrator": 2 },
+		"uniques": ["Consumes [1] [Power]"],
+		"requiredTech": "Networking"
+	}
 ]
